@@ -32,13 +32,14 @@
             $author_name = trim($_POST['author_name']);
             $cost = isset($_POST['cost']) ? intval($_POST['cost']) : 0;
             $isbn_no = trim($_POST['isbn_no']);
+
             if (isset($_POST['insert'])) {
                 $stmt = $conn->prepare("insert into book_master(book_code,book_name, author_name, cost, isbn_no) values (?,?,?,?,?)");
                 $stmt->bind_param("issis", $book_code, $book_name, $author_name, $cost, $isbn_no);
                 if ($stmt->execute()) {
-                    $message = 'Book Record inserted successfully';
+                    $_SESSION['message'] = 'Book Record inserted successfully';
                 } else {
-                    $error = 'Book Record insertion failed';
+                    $_SESSION['error'] = 'Book Record insertion failed';
                 }
                 $stmt->close();
             } elseif (isset($_POST['update'])) {
@@ -47,32 +48,34 @@
                     $stmt = $conn->prepare("update book_master set book_name=?,author_name=?,cost=?,isbn_no=? where book_code=?");
                     $stmt->bind_param("ssisi", $book_name, $author_name, $cost, $isbn_no, $book_code);
                     if ($stmt->execute()) {
-                        $message = 'Book Record updated successfully';
+                        $_SESSION['message'] = 'Book Record updated successfully';
                     } else {
-                        $error = 'Book Record updation failed';
+                        $_SESSION['error'] = 'Book Record updation failed';
                     }
                 } else {
-                    $error = 'book code not found';
+                    $_SESSION['error'] = 'book code not found';
                 }
             } elseif (isset($_POST['delete'])) {
                 if ($book_code) {
                     $stmt = $conn->prepare("delete from book_master where book_code=?");
                     $stmt->bind_param("i", $book_code);
                     if ($stmt->execute()) {
-                        $message = 'Book Record deleted successfully';
+                        $_SESSION['message'] = 'Book Record deleted successfully';
                     } else {
-                        $error = 'error deleting book: ' . $stmt->error;
+                        $_SESSION['error'] = 'error deleting book: ' . $stmt->error;
                     }
                     $stmt->close();
                 } else {
-                    $error = 'book code not found';
+                    $_SESSION['error'] = 'book code not found';
                 }
             }
         } ?>
-        <?php if ($message): ?> <p style="color:green;">
-                <?php echo $message; ?> </p>
-        <?php endif; ?> <?php if ($error): ?>
-            <p class="error"><?php echo $error; ?></p> <?php endif; ?>
+        <?php if ($_SESSION['message']): ?> <p style="color:green;">
+                <?php echo $_SESSION['message']; unset($_SESSION['message']) ?> </p>
+        <?php endif; ?> <?php if ($_SESSION['error']): ?>
+            <p class="error">
+                <?php echo $_SESSION['error'];unset($_SESSION['error']) ?></p> 
+                <?php endif; ?>
         <form method="post">
             <label for="book_code">book_code</label>
             <input type="number" name="book_code" id="book_code"><br><br>
@@ -84,7 +87,9 @@
             <input type="number" name="cost" id="cost" step="0.01" min="0.01"><br><br> <label for="isbn_no">isbn_no</label>
             <input type="text" name="isbn_no" id="isbn_no"><br><br>
 
-            <input type="submit" name="insert" value="insert_book"> <input type="submit" name="update" value="update_book"> <input type="submit" name="delete" value="delete_book">
+            <input type="submit" name="insert" value="insert_book">
+            <input type="submit" name="update" value="update_book">
+            <input type="submit" name="delete" value="delete_book">
             <h2>Book Master Data</h2>
             <table border="1">
                 <tr>
