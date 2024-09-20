@@ -73,10 +73,10 @@
         <?php if ($_SESSION['message']): ?> <p style="color:green;">
                 <?php echo $_SESSION['message']; unset($_SESSION['message']) ?> </p>
         <?php endif; ?> <?php if ($_SESSION['error']): ?>
-            <p class="error">
-                <?php echo $_SESSION['error'];unset($_SESSION['error']) ?></p> 
-                <?php endif; ?>
+            <p class="error"> <?php echo $_SESSION['error']; unset($_SESSION['error']) ?> </p>
+        <?php endif; ?>
         <form method="post">
+            <!-- https://github.com/AyushSavaliya18/HTML-CSS.git -->
             <label for="book_code">book_code</label>
             <input type="number" name="book_code" id="book_code"><br><br>
             <label for="book_name">book_name</label>
@@ -103,7 +103,8 @@
                 $stmt = $conn->prepare("SELECT * FROM book_master");
                 $stmt->execute();
                 $result = $stmt->get_result();
-                while ($row = $result->fetch_assoc()) {
+                while ($row = $result->fetch_assoc()) 
+                {
                 ?> <tr>
                         <td><?php echo $row['book_code']; ?></td>
                         <td><?php echo $row['book_name']; ?></td>
