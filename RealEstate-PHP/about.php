@@ -25,7 +25,7 @@ include("config.php");
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
 
 <!-- Css Link -->
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+ 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css">
 <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
@@ -49,7 +49,7 @@ include("config.php");
 	  </div>
 	</div>
 </div> -->
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+ 
 <div id="page-wrapper">
     <div class="row"> 
         <!--	Header start  -->
@@ -75,7 +75,7 @@ include("config.php");
             </div>
         </div> -->
          <!--	Banner   --->
-		 <!-- FOR MORE PROJECTS visit: codeastro.com -->
+		  
         <!--	About Our Company -->
         <div class="full-row">
             <div class="container">
@@ -95,7 +95,15 @@ include("config.php");
                 <div class="row about-company">
                     <div class="col-md-12 col-lg-7">
                         <div class="about-content">
-                            <?php echo $row['2'];?>
+                            <p>Welcome to [Your Real Estate Brand Name], your trusted partner in real estate. Whether you’re looking to buy, sell, or invest, we are here to make your real estate journey smooth and successful. With years of experience and a deep understanding of the market, we specialize in connecting people with their dream homes and lucrative investment opportunities.</p><br>
+                            <h3>Who We Are</h3>
+                            <p>At [Your Real Estate Brand Name], we are more than just real estate agents—we are advisors, negotiators, and advocates for your best interests. Our team is made up of seasoned professionals with expertise across residential, commercial, and rental properties. From first-time homebuyers to seasoned investors, we work closely with our clients to understand their unique needs and deliver results that exceed expectations.</p><br>
+                            <h3>What We Do</h3>
+                            <p>We offer a full suite of real estate services, including:
+
+Buying & Selling: Whether you're buying your first home or selling a property, we guide you through every step, from market analysis to closing deals.
+Property Management: We manage rental properties for landlords, ensuring your property is maintained and your tenants are satisfied.
+Investment Consultation: Looking to grow your real estate portfolio? We provide insights and opportunities that align with your financial goals.</p>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-5 mt-5">
@@ -116,7 +124,7 @@ include("config.php");
         <!-- Scroll to top --> 
         <a href="#" class="bg-secondary text-white hover-text-secondary" id="scroll"><i class="fas fa-angle-up"></i></a> 
         <!-- End Scroll To top --> 
-    </div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+    </div> 
 </div>
 <!-- Wrapper End --> 
 

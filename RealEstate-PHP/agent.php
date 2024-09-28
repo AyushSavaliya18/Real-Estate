@@ -4,7 +4,7 @@ session_cache_limiter(false);
 session_start();
 include("config.php");
 ///code								
-?><!-- FOR MORE PROJECTS visit: codeastro.com -->
+?> 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +23,7 @@ include("config.php");
 	========================================================-->
 <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+ 
 <!--	Css Link
 	========================================================-->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -58,7 +58,7 @@ include("config.php");
     <div class="row"> 
         <!--	Header One -->
         <!--	Header start  -->
-		<?php include("include/header.php");?><!-- FOR MORE PROJECTS visit: codeastro.com -->
+		<?php include("include/header.php");?> 
         <!--	Header end  -->
 
         <!--	Banner   --->
@@ -98,8 +98,11 @@ include("config.php");
                             
                     <div class="col-md-6 col-lg-4">
                         <div class="hover-zoomer bg-white shadow-one mb-4">
-                            <div class="overflow-hidden"> <img src="admin/user/team1.jpg echo $row['6'];?>" alt="aimage"> </div>
-                            <div class="py-3 text-center">
+                       <!--     <div class="overflow-hidden"> <img src="admin/user/avatarm2-min.jpg?php echo $row['6'];?>" alt="aimage"> </div>-->
+                       <div class="overflow-hidden">
+                        <img src="<?= 'admin/user/' . $row['6'] ?>" alt="aimage">
+                        </div>
+                       <div class="py-3 text-center">
                                 <h5 class="text-secondary hover-text-success"><a href="#"><?php echo $row['1'];?></a></h5>
                                 <span>Real Estate - Agent</span> </div>
                         </div>
@@ -145,4 +148,4 @@ include("config.php");
 <script src="js/custom.js"></script>
 </body>
 
-</html>
+</html> 

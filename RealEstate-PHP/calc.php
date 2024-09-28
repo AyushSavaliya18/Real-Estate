@@ -48,7 +48,7 @@ if(isset($_REQUEST['calc']))
 <link rel="stylesheet" type="text/css" href="fonts/flaticon/flaticon.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+ 
 <!--	Title
 	=========================================================-->
 <title>Real Estate PHP</title>
@@ -90,7 +90,7 @@ if(isset($_REQUEST['calc']))
                     </div>
                 </div>
             </div>
-        </div> --><!-- FOR MORE PROJECTS visit: codeastro.com -->
+        </div> --> 
          <!--	Banner   --->
 		 
 		 
@@ -115,34 +115,34 @@ if(isset($_REQUEST['calc']))
 						
                             <tr class="text-center font-18">
                                 <td><b>Amount</b></td>
-                                <td><b><?php echo '$'.$amount ; ?></b></td>
+                                <td><b><?php echo '₹'.$amount ; ?></b></td>
                             </tr>
 							<tr class="text-center">
                                 <td><b>Total Duration</b></td>
                                 <td><b><?php echo $mon.' Months' ; ?></b></td>
-                            </tr><!-- FOR MORE PROJECTS visit: codeastro.com -->
+                            </tr> 
 							<tr class="text-center">
                                 <td><b>Interest Rate</b></td>
                                 <td><b><?php echo $int.'%' ; ?></b></td>
                             </tr>
 							<tr class="text-center">
                                 <td><b>Total Interest</b></td>
-                                <td><b><?php echo '$'.$interest ; ?></b></td>
+                                <td><b><?php echo '₹'.$interest ; ?></b></td>
                             </tr>
 							<tr class="text-center">
                                 <td><b>Total Amount</b></td>
-                                <td><b><?php echo '$'.$pay ; ?></b></td>
+                                <td><b><?php echo '₹'.$pay ; ?></b></td>
                             </tr>
 							<tr class="text-center">
                                 <td><b>Pay Per Month (EMI)</b></td>
-                                <td><b><?php echo '$'.$month ; ?></b></td>
+                                <td><b><?php echo '₹'.$month ; ?></b></td>
                             </tr>
 							
                         </tbody>
                     </table> 
 					</center>
             </div>
-        </div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+        </div> 
 	<!--	Submit property   -->
         
         
