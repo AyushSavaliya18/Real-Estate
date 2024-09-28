@@ -31,10 +31,6 @@ if(!isset($_SESSION['auser']))
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 		
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.min.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
     </head>
     <body>
 	
@@ -53,10 +49,10 @@ if(!isset($_SESSION['auser']))
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">View About</h3>
+								<!-- <h3 class="page-title">View About</h3> -->
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-									<li class="breadcrumb-item active">View About</li>
+									<!-- <li class="breadcrumb-item active">View About</li> -->
 								</ul>
 							</div>
 						</div>
