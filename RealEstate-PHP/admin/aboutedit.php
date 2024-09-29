@@ -32,6 +32,7 @@ if (isset($_POST['update'])) {
 <html lang="en">
 
 <head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 	<title>Ventura - Vertical Form</title>
@@ -59,6 +60,11 @@ if (isset($_POST['update'])) {
 			<script src="assets/js/html5shiv.min.js"></script>
 			<script src="assets/js/respond.min.js"></script>
 		<![endif]-->
+		<style>
+			h3{
+				margin-top: 40px;
+			}
+		</style>
 </head>
 
 <body>

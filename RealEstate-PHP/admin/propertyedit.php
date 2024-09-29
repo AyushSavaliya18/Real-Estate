@@ -116,6 +116,11 @@ if(isset($_POST['add']))
 			<script src="assets/js/html5shiv.min.js"></script>
 			<script src="assets/js/respond.min.js"></script>
 		<![endif]-->
+		<style>
+			h3{
+				margin-top: 40px;
+			}
+		</style>
     </head>
     <body>
 

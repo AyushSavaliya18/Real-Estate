@@ -30,7 +30,11 @@ if(!isset($_SESSION['auser']))
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
-		
+		<style>
+			h3{
+				margin-top: 40px;
+			}
+		</style>
     </head>
     <body>
 	
