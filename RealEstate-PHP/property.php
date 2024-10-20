@@ -89,7 +89,7 @@ include("config.php");
 				
 					<div class="col-lg-8">
                         <img src="admin/property/zillhms2.jpg" style="height:500px">
-                        <div class="row">
+                        <div class="row" style="margin-top: 70px;">
 						
 							<?php 
 							$query=mysqli_query($con,"SELECT property.*, user.uname,user.utype,user.uimage FROM `property`,`user` WHERE property.uid=user.uid");
