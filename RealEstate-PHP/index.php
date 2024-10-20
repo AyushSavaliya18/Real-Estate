@@ -446,7 +446,7 @@ include("config.php");
 					<div class="col-lg-12">
 						<div class="content-sidebar p-4">
 							<div class="mb-3 col-lg-12">
-								<h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Testimonial</h4>
+								<!-- <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Testimonial</h4> -->
 									<div class="recent-review owl-carousel owl-dots-gray owl-dots-hover-success">
 									
 										<?php
