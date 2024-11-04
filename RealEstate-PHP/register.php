@@ -91,7 +91,7 @@ if (isset($_REQUEST['reg'])) {
 	<div id="page-wrapper">
 		<div class="row">
 			<!--	Header start  -->
-			<?php include("include/header1.php"); ?>
+			<?php include("include/header.php"); ?>
 			<!--	Header end  --><!-- FOR MORE PROJECTS visit: codeastro.com -->
 
 			<!--	Banner   --->
@@ -147,7 +147,7 @@ if (isset($_REQUEST['reg'])) {
 										</div><!-- FOR MORE PROJECTS visit: codeastro.com -->
 										<div class="form-check-inline">
 											<label class="form-check-label">
-												<input type="radio" class="form-check-input" name="utype" value="agent">Agent
+												<!-- <input type="radio" class="form-check-input" name="utype" value="agent">Agent -->
 											</label>
 										</div>
 										<div class="form-check-inline disabled">

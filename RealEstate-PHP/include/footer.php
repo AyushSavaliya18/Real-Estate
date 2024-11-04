@@ -31,7 +31,7 @@
                                             <li><a href="about.php" class="text-white">About Us</a></li>
                                             <li><a href="#" class="text-white">Featured Property</a></li>
                                             <li><a href="#" class="text-white">Submit Property</a></li>
-                                            <li><a href="agent.php" class="text-white">Our Agents</a></li>
+                                            <!-- <li><a href="agent.php" class="text-white">Our Agents</a></li> -->
                                         </ul>
                                     </div>
                                 </div>

@@ -1,5 +1,5 @@
 <?php
-ini_set('session.cache_limiter', 'public');
+ini_set('session.cache_limiter', value: 'public');
 session_cache_limiter(false);
 session_start();
 include("config.php");
@@ -45,16 +45,15 @@ if (!isset($_SESSION['uemail'])) {
 
 <body>
 
-    <!--	Page Loader
-=============================================================
-<div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
-	<div class="d-flex justify-content-center y-middle position-relative">
-	  <div class="spinner-border" role="status">
-		<span class="sr-only">Loading...</span>
-	  </div>
-	</div>
-</div>
--->
+
+    <!-- <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
+        <div class="d-flex justify-content-center y-middle position-relative">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div> -->
+
 
 
     <div id="page-wrapper">
@@ -68,13 +67,13 @@ if (!isset($_SESSION['uemail'])) {
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <h2 class="page-name float-left text-white text-uppercase mt-1 mb-0"><b>Agent Listed Property</b></h2>
+                            <h2 class="page-name float-left text-white text-uppercase mt-1 mb-0"><b>User Listed Property</b></h2>
                         </div>
                         <div class="col-md-6">
                             <nav aria-label="breadcrumb" class="float-left float-md-right">
                                 <ol class="breadcrumb bg-transparent m-0 p-0">
                                     <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active">Agent Listed Property</li>
+                                    <li class="breadcrumb-item active">User Listed Property</li>
                                 </ol>
                             </nav>
                         </div>
@@ -89,7 +88,7 @@ if (!isset($_SESSION['uemail'])) {
                 <div class="container">
                     <div class="row mb-5">
                         <div class="col-lg-12">
-                            <h2 class="text-secondary double-down-line text-center">Agent Listed Property</h2>
+                            <h2 class="text-secondary double-down-line text-center">User Listed Property</h2>
                             <?php
                             if (isset($_GET['msg']))
                                 echo $_GET['msg'];
@@ -122,7 +121,7 @@ if (!isset($_SESSION['uemail'])) {
                                             <h5 class="text-secondary text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0']; ?>"><?php echo $row['1']; ?></a></h5>
                                             <span class="font-14 text-capitalize"><i class="fas fa-map-marker-alt text-success font-13"></i>&nbsp; <?php echo $row['14']; ?></span>
                                             <div class="price mt-3">
-                                                <span class="text-success">$&nbsp;<?php echo $row['13']; ?></span>
+                                                <span class="text-success">₹&nbsp;<?php echo $row['13']; ?></span>
                                             </div>
                                         </div>
                                     </td>

@@ -95,7 +95,7 @@ if (!isset($_SESSION['auser'])) {
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-3 col-sm-6 col-12">
+				<!-- <div class="col-xl-3 col-sm-6 col-12">
 					<div class="card">
 						<div class="card-body">
 							<div class="dash-widget-header">
@@ -106,7 +106,7 @@ if (!isset($_SESSION['auser'])) {
 							</div>
 							<div class="dash-widget-info">
 
-								<h3><?php $sql = "SELECT * FROM user WHERE utype = 'agent'";
+								<h3><//?php $sql = "SELECT * FROM user WHERE utype = 'agent'";
 									$query = $con->query($sql);
 									echo "$query->num_rows"; ?></h3>
 
@@ -117,7 +117,7 @@ if (!isset($_SESSION['auser'])) {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!-- <div class="col-xl-3 col-sm-6 col-12">
 					<div class="card">
 						<div class="card-body">
@@ -129,7 +129,7 @@ if (!isset($_SESSION['auser'])) {
 							</div>
 							<div class="dash-widget-info">
 
-								<h3><?php $sql = "SELECT * FROM user WHERE utype = 'builder'";
+								<h3><//?php $sql = "SELECT * FROM user WHERE utype = 'builder'";
 									$query = $con->query($sql);
 									echo "$query->num_rows"; ?></h3>
 

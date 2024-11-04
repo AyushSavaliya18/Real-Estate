@@ -403,9 +403,9 @@ if (isset($_POST['add'])) {
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Agent ID</label>
+											<label class="col-lg-3 col-form-label">User ID</label>
 											<div class="col-lg-9">
-												<input type="text" class="form-control" name="uid" required placeholder="Enter Agent Id (only number)">
+												<input type="text" class="form-control" name="uid" required placeholder="Enter User Id (only number)">
 											</div>
 										</div>
 										<div class="form-group row">
